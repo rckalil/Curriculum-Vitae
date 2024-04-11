@@ -1,84 +1,209 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-	<meta charset="UTF-8">
-    <meta name="description" content="Currículo de Rodrigo Cavalcante Kalil, baseado no template de Fly Nerd">
-    <link rel="stylesheet" href="">
-    <link rel="icon" href="./img/favicon.ico">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-    <title>Rodrigo Cavalcante Kalil - CV</title>
+    <title>Meu Currículo</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, rgb(37, 64, 122), rgb(82, 193, 158));
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            background-color: white;
+            margin: 150px;
+            padding: 100px;
+        }
+        .image-frame {
+            border: 2px solid black;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 50%;
+            background-color: rgb(60, 124, 140);
+        }
+        .photo {
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+        .bio {
+            text-align: center;
+            line-height-step: 1.5;
+            font-size: 1.2em;
+        }
+        td {
+            padding: 2px;
+            width: 100px;
+        }
+        .column {
+            text-align: center;
+        }
+        .bar {
+            background-color: green;
+            height: 20px;
+            width: 100px;
+        }
+        .circle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .circle {
+            background-color: black;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 50px;
+        }
+        .face {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            
+        }
+    </style>
 </head>
-
 <body>
-  <header>
-    <div>
-      <img src="./img/face.jfif" />
-    </div>
-    <h1>Rodrigo Cavalcante Kalil</h1>
-    <section>
-      <p>Olá! Meu nome é Rodrigo Kalil, sou um universitário em busca de um estágio. Estudo ciência de dados e economia em duas faculdades. Sou dedicado, compreensível e desejo desenvolver novas capacidades com as experiências desafiadoras e interpessoais que vou vivenciar num ambiente de trabalho.</p>
-      <a href="https://github.com/rckalil" target="_blank">
-        <i class="fab fa-github-alt"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/rodrigo-cavalcante-kalil" target="_blank">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-    </section>
-  </header>
-  <main>
-    <section>
-      <h3>Ferramentas</h3>
-      <div class='skills'>
-        <div class='column'>
-          <h4>Conhecimento hábil</h4>
-          <ul>
-            <li>Python</li>
-            <li>C++</li>
-            <li>Excel</li>
-          </ul>
-        </div>
-        <div class='column'>
-          <h4>Conhecimento básico</h4>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS</li>
-            <li>R</li>
-            <li>LaTeX</li>
-            <li>SQL</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Idiomas</h4>
-          <p>Português - nativo</p>
-          <p>Inglês - avançado</p>
-        </div>
-      </div>
-    </section>
+    <div class="container">
 
-    <section>
-      <h3>Educação</h3>
-      <article>
-        <div class='school'>
-          <span>2022-2025</span> <strong>Fundação Getúlio Vargas - Emap</strong>
-        </div>
-        <div class="descrition">
-          Bacharelado em Ciência de Dados e Inteligência Artificial
-        </div>
-      </article>
-      <article>
-        <div class='school'>
-          <span>2022-2026</span> <strong>Universidade Federal do Rio de Janeiro - IE</strong>
-        </div>
-        <div>
-          Bacharelado em Ciências Econômicas
-        </div>
-      </article>
-    </section>
-    
-  </main>
-  <footer>
-    <p>Created by: <a href="https://www.flynerd.pl/">@flynerd</a>  / <a href="https://www.linkedin.com/in/ritalyczywek/">LinkedIn</a> / 2018 </p>
-  </footer>
+        <section class="photo">
+            <div class="image-frame">
+            <img src="./img/face.jfif" class="face">
+            </div>
+        </section>
+
+        <section>
+            <h1>Rodrigo Cavalcante Kalil</h1>
+            
+            <p class="bio">Olá! Meu nome é Rodrigo Kalil, sou um universitário em busca de um estágio. Estudo ciência de dados e</p>
+            <p class="bio">economia em duas faculdades. Sou dedicado, compreensível e desejo desenvolver novas</p>
+            <p class="bio">capacidades com as experiências desafiadoras e interpessoais que vou</p>
+            <P class="bio">vivenciar num ambiente de trabalho.</h3>
+            <a href="https://www.linkedin.com/in/rodrigo-cavalcante-kalil/">LinkedIn</a>
+            <a href="https://github.com/rckalil">GitHub</a>
+        </section>
+
+        <section>
+            <h2>Programação</h2>
+            <!-- Suas habilidades aqui -->
+            <table>
+                <tr>
+                    <td><b>Conhecimento</b></td>
+                    <td class="column"><b>Básico</b></td>
+                    <td class="column"><b>Intermediário</b></td>
+                    <td class="column"><b>Avançado</b></td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td><p class="bar"></p></td>
+                    <td><p class="bar"></p></td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td><p class="bar"></p></td>
+                    <td><p class="bar"></p></td>
+                </tr>
+                <tr>
+                    <td>R</td>
+                    <td><p class="bar"></p></td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td><p class="bar"></p></td>
+                </tr>
+                <tr>
+                    <td>Julia</td>
+                    <td><p class="bar"></p></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Idiomas</h2>
+            <!-- Seus idiomas aqui -->
+            <table>
+                <tr>
+                    <td><b>Conhecimento</b></td>
+                    <td class="column"><b>Básico</b></td>
+                    <td class="column"><b>Intermediário</b></td>
+                    <td class="column"><b>Avançado</b></td>
+                </tr>
+                <tr>
+                    <td>Inglês</td>
+                    <td><p class="bar"></p></td>
+                    <td><p class="bar"></p></td>
+                    <td><p class="bar"></p></td>
+                </tr>
+                <tr>
+                    <td>Espanhol</td>
+                    <td><p class="bar"></p></td>
+                </tr>
+                <tr>
+                    <td>Francês</td>
+                    <td><p class="bar"></p></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Ferramentas</h2>
+            <!-- Suas ferramentas aqui -->
+            <table>
+                <tr>
+                    <td><b>Conhecimento</b></td>
+                    <td class="column"><b>Básico</b></td>
+                    <td class="column"><b>Intermediário</b></td>
+                    <td class="column"><b>Avançado</b></td>
+                </tr>
+                <tr>
+                    <td>Excel</td>
+                    <td><p class="bar"></p></td>
+                    <td><p class="bar"></p></td>
+                </tr>
+                <tr>
+                    <td>Tableau</td>
+                    <td><p class="bar"></p></td>
+                </tr>
+                <tr>
+                    <td>Git</td>
+                    <td><p class="bar"></p></td>
+                    <td><p class="bar"></p></td>
+                </tr>
+                <tr>
+                    <td>Latex</td>
+                    <td><p class="bar"></p></td>
+                    <td><p class="bar"></p></td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td><p class="bar"></p></td>
+                    <td><p class="bar"></p></td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td><p class="bar"></p></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Formação</h2>
+            <ul>
+                <li><b>2022 - 2025</b> Bacharelado em Ciência de Dados</li>
+                <p>Fundação Getúlio Vargas - EMAp</p>
+                <li><b>2022 - 2026</b> Bacharelado em Ciências Econômicas</li>
+                <p>Universidade Federal do Rio de Janeiro - IE</p>
+            </ul>
+        </section>
+
+        
+    </div>
 </body>
 </html>
